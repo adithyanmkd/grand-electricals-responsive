@@ -1,7 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-const ChooseCard = ({ label, description, iconPath, alt }: any) => {
+interface CardType {
+  label: string;
+  description: string;
+  iconPath: string;
+  alt: string;
+}
+
+const ChooseCard = ({ label, description, iconPath, alt }: CardType) => {
   return (
     <div className="max-w-[304px] w-full mx-auto">
       <div>

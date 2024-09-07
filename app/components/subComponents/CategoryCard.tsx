@@ -1,16 +1,29 @@
 import Image from "next/image";
 import React from "react";
 
-const CategoryCard = ({ imgPath, alt, label, description }: any) => {
+interface CategoryType {
+  id: number;
+  label: string;
+  imgPath: string;
+  alt: string;
+  description: string;
+}
+
+const CategoryCard = (props: CategoryType) => {
   return (
     <div className="rounded-[10px] mx-auto w-[275px] h-auto p-[17px] bg-white">
       <div>
-        <Image src={imgPath} height={209} width={242} alt={alt}></Image>
+        <Image
+          src={props.imgPath}
+          height={209}
+          width={242}
+          alt={props.alt}
+        ></Image>
       </div>
       <div>
-        <h3 className="mt-[18px] font-medium text-lg">{label}</h3>
+        <h3 className="mt-[18px] font-medium text-lg">{props.label}</h3>
         <p className="mt-[8px] font-light text-base text-[#979797]">
-          {description}
+          {props.description}
         </p>
       </div>
     </div>

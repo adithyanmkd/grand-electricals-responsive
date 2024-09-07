@@ -1,11 +1,19 @@
 import React from "react";
 import CategoryCard from "../subComponents/CategoryCard";
 
-const categoryValues = [
+interface CategoryType {
+  id: number;
+  label: string;
+  imgPath: string;
+  alt: string;
+  description: string;
+}
+
+const categoryValues: CategoryType[] = [
   {
     id: 1,
     label: "Fans",
-    imgPath: `/images/products/fan-image.svg`,
+    imgPath: "/images/products/fan-image.svg",
     alt: "fan image",
     description:
       "Energy-efficient ceiling fans, exhaust fans, and portable fans for homes and businesses.",
@@ -13,7 +21,7 @@ const categoryValues = [
   {
     id: 2,
     label: "Lighting Solutions",
-    imgPath: `/images/products/lighting.svg`,
+    imgPath: "/images/products/lighting.svg",
     alt: "light image",
     description:
       "From LED to smart lighting, we offer a wide range of solutions for every home or business.",
@@ -21,7 +29,7 @@ const categoryValues = [
   {
     id: 3,
     label: "Wiring & Cables",
-    imgPath: `/images/products/wiring.svg`,
+    imgPath: "/images/products/wiring.svg",
     alt: "wiring image",
     description:
       "High-quality and durable wiring for all types of installations.",
@@ -29,7 +37,7 @@ const categoryValues = [
   {
     id: 4,
     label: "MCBs & DBs",
-    imgPath: `/images/products/mcb-switches.svg`,
+    imgPath: "/images/products/mcb-switches.svg",
     alt: "mcb switches",
     description:
       "Reliable Miniature Circuit Breakers (MCBs) and Distribution Boards (DBs) for secure and efficient electrical systems.",
@@ -37,7 +45,7 @@ const categoryValues = [
   {
     id: 5,
     label: "Air Modular",
-    imgPath: `/images/products/air-moduler.svg`,
+    imgPath: "/images/products/air-moduler.svg",
     alt: "mcb switches",
     description:
       "Modern modular air systems for energy-efficient and smart climate control.",
@@ -45,7 +53,7 @@ const categoryValues = [
   {
     id: 6,
     label: "Accessories",
-    imgPath: `/images/products/accessories.svg`,
+    imgPath: "/images/products/accessories.svg",
     alt: "accessories",
     description:
       "A full range of electrical accessories including plug points, adapters, conduits, and connectors.",
