@@ -12,10 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   daisyui: {
-    themes: ["light"], // Set light as the default theme
+    themes: ["light"],
   },
   plugins: [require("daisyui")],
 };
