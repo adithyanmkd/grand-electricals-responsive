@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "./components/main/Navbar";
+import Footer from "./components/main/Footer";
+
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Grand Electricals",
@@ -16,9 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-[#FAF9F6]`}>
+      <body className={`${poppins.className} bg-[#FAF9F6]`}>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

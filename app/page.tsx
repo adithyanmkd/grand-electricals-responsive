@@ -4,7 +4,7 @@ import WhyChoose from "./components/homePageComponents/WhyChoose";
 
 export default function Home() {
   return (
-    <div className="pb-40">
+    <div className="flex flex-col justify-center min-h-screen">
       <IntroContent />
       <ProductCategories />
       <WhyChoose />

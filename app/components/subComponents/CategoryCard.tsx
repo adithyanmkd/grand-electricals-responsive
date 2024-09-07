@@ -9,7 +9,9 @@ const CategoryCard = ({ imgPath, alt, label, description }: any) => {
       </div>
       <div>
         <h3 className="mt-[18px] font-medium text-lg">{label}</h3>
-        <p className="mt-[8px] text-base text-[#979797]">{description}</p>
+        <p className="mt-[8px] font-light text-base text-[#979797]">
+          {description}
+        </p>
       </div>
     </div>
   );

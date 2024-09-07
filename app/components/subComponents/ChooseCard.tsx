@@ -1,18 +1,22 @@
 import Image from "next/image";
 import React from "react";
 
-const ChooseCard = () => {
+const ChooseCard = ({ label, description, iconPath, alt }: any) => {
   return (
-    <div>
+    <div className="max-w-[304px] w-full mx-auto">
       <div>
         <Image
-          src={"/icons/wide-selection.svg"}
+          className="mx-auto"
+          src={iconPath}
           width={52}
           height={52}
-          alt={"selection icon"}
+          alt={alt}
         />
       </div>
-      <div></div>
+      <div className="text-center mt-[17px] space-y-[8px]">
+        <h4 className="text-lg font-medium">{label}</h4>
+        <p className="font-light tex-lg text-[#414141]">{description}</p>
+      </div>
     </div>
   );
 };
