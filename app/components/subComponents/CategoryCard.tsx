@@ -11,7 +11,7 @@ interface CategoryType {
 
 const CategoryCard = (props: CategoryType) => {
   return (
-    <div className="rounded-[10px] mx-auto w-[275px] h-auto p-[17px] bg-white">
+    <div className="rounded-[10px] mx-auto w-[275px] h-auto p-[17px] shadow-md bg-white">
       <div>
         <Image
           src={props.imgPath}
