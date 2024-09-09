@@ -55,7 +55,7 @@ const OurBrandSection = () => {
       <h1 className="pb-[45px] text-center font-bold text-[26px]">
         Our Brands
       </h1>
-      <div className="grid grid-cols-3 pb-[50px] max-w-[320px] mx-auto">
+      <div className="grid grid-cols-3 pb-[50px] max-w-[320px] md:max-w-[640px] mx-auto">
         {brandLogo.map((brand, index, array) => {
           return (
             <BrandGrid

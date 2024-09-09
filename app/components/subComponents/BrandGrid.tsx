@@ -28,12 +28,18 @@ const BrandGrid = ({ iconPath, alt, index, arrayLength }: brandType) => {
   return (
     <div
       className={clsx(
-        "w-full h-[100px] grid place-items-center",
+        "w-full h-[100px] md:h-[150px] grid place-items-center",
         rightBorder && "border-r-[1px]",
         bottomBorder && "border-b-[1px]"
       )}
     >
-      <Image className="" src={iconPath} height={19} width={95} alt={alt} />
+      <Image
+        className="md:w-[70%]"
+        src={iconPath}
+        height={19}
+        width={95}
+        alt={alt}
+      />
     </div>
   );
 };
