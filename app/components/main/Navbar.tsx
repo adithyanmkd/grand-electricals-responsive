@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 
 import Link from "next/link";
 import {
@@ -40,7 +40,7 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const [activeState, setActiveState] = useState(false);
+  // const [activeState, setActiveState] = useState(false);
 
   return (
     <div className="z-10">
