@@ -51,7 +51,7 @@ const brandLogo = [
 
 const OurBrandSection = () => {
   return (
-    <div className="mt-[21px]">
+    <div id="brand-section" className="mt-[21px]">
       <h1 className="pb-[45px] text-center font-bold text-[26px]">
         Our Brands
       </h1>

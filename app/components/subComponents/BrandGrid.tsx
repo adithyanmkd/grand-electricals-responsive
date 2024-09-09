@@ -33,13 +33,7 @@ const BrandGrid = ({ iconPath, alt, index, arrayLength }: brandType) => {
         bottomBorder && "border-b-[1px]"
       )}
     >
-      <Image
-        className="transform hover:-translate-y-16 transition-transform duration-1000"
-        src={iconPath}
-        height={19}
-        width={95}
-        alt={alt}
-      />
+      <Image className="" src={iconPath} height={19} width={95} alt={alt} />
     </div>
   );
 };

@@ -1,86 +1,89 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import {
+  Footer as FlobiteFooter,
+  FooterBrand,
+  FooterCopyright,
+  FooterDivider,
+  FooterIcon,
+  FooterLink,
+  FooterLinkGroup,
+  FooterTitle,
+} from "flowbite-react";
+import {
+  BsDribbble,
+  BsFacebook,
+  BsGithub,
+  BsInstagram,
+  BsTwitter,
+} from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div id="footer" className="bg-[#45496A] pb-[20px]">
-      <ul className="max-w-[300px] mx-auto pt-5 space-y-[26px]">
-        <li className="text-center space-y-[10px]">
-          <h4 className="font-semibold text-lg text-white">Office</h4>
-          <p className="text-sm text-[#D4D4D4]">
-            Palakkad - Kozhikode Hwy, Kalladikode, Karmiba South, Kerala 678596
-          </p>
-        </li>
-        <li className="text-center space-y-[10px]">
-          <Image
-            className="mx-auto"
-            src={"icons/phone.svg"}
-            width={15}
-            height={15}
-            alt="phone icon"
-          />
-          <p className="text-sm text-[#D4D4D4]">+91 9447623638</p>
-        </li>
-        <li className="text-center space-y-[10px]">
-          <h4 className="font-semibold text-lg text-white">Pages</h4>
-          {/* navigation link */}
-          <ul className="text-sm text-[#D4D4D4] space-y-1">
-            <li>
-              <Link href={"#"}>Home</Link>
-            </li>
-            <li>
-              <Link href={"#product-section"}>About Us</Link>
-            </li>
-            <li>
-              <Link href={"#footer"}>Contact Us</Link>
-            </li>
-          </ul>
-          {/* navigation link ended */}
-        </li>
-        <li className="text-center space-y-[10px]">
-          <h4 className="font-bold text-[20px] text-white">
-            Grand Electricals
-          </h4>
-          <ul className="flex space-x-4 mx-auto justify-center w-auto max-w-[100px]">
-            <li>
-              <Link href={"#"}>
-                <Image
-                  src={"/icons/facebook.svg"}
-                  width={18}
-                  height={18}
-                  alt="facebook icon"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <Image
-                  src={"/icons/whatsapp.svg"}
-                  width={18}
-                  height={18}
-                  alt="facebook icon"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <Image
-                  src={"/icons/instagram.svg"}
-                  width={18}
-                  height={18}
-                  alt="facebook icon"
-                />
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li className="text-center space-y-[10px]">
-          <div className="h-px bg-[#898989]"></div>
-          <p className="text-xs text-[#D4D4D4]">Powered By Mobiz Technology</p>
-        </li>
-      </ul>
-    </div>
+    <FlobiteFooter id="footer" container className="bg-[#45496A] rounded-none">
+      <div className="w-full max-w-screen-lg mx-auto">
+        <div>
+          <div>
+            <FooterTitle
+              title="Grand Electricals"
+              className="text-2xl text-white"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div>
+              <FooterTitle title="Office" className="text-white" />
+              <FooterLinkGroup col>
+                <p className="text-sm text-[#D4D4D4]">
+                  Palakkad - Kozhikode Hwy, Kalladikode, Karmiba South, Kerala
+                  678596
+                </p>
+                <p className="text-sm text-[#D4D4D4]">+91 9447623638</p>
+              </FooterLinkGroup>
+            </div>
+            <div>
+              <FooterTitle title="Pages" className="text-white" />
+              <FooterLinkGroup col>
+                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
+                  Home
+                </FooterLink>
+                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
+                  Product & Services
+                </FooterLink>
+                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
+                  About Us
+                </FooterLink>
+                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
+                  Contact Us
+                </FooterLink>
+              </FooterLinkGroup>
+            </div>
+            <div>
+              <FooterTitle title="Legal" className="text-white" />
+              <FooterLinkGroup col>
+                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
+                  Privacy Policy
+                </FooterLink>
+                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
+                  Terms &amp; Conditions
+                </FooterLink>
+              </FooterLinkGroup>
+            </div>
+          </div>
+        </div>
+        <FooterDivider />
+
+        {/* <div className="w-full sm:flex sm:items-center sm:justify-between mx-auto">
+          <FooterCopyright href="#" by="Flowbite™" year={2022} />
+          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+            <FooterIcon href="#" icon={BsFacebook} />
+            <FooterIcon href="#" icon={BsInstagram} />
+            <FooterIcon href="#" icon={BsTwitter} />
+          </div>
+        </div> */}
+        <p className="text-xs mt-2 text-[#D4D4D4] text-center">
+          Powered by mobiz technologies
+        </p>
+      </div>
+    </FlobiteFooter>
   );
 };
 

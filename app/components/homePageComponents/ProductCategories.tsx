@@ -64,7 +64,7 @@ const ProductCategories = () => {
   return (
     <div className="pt-[32px]">
       <h1 className="text-[26px] font-bold text-center">Products & Services</h1>
-      <div className="space-y-[23px] mt-[24px]">
+      <div className="space-y-[23px] justify-center mt-[24px] grid grid-cols-1  md:grid-cols-2 md:max-w-[600px] md:mx-auto md:space-y-0 md:gap-8 lg:max-w-[900px] lg:grid-cols-3">
         {categoryValues.map((product) => (
           <CategoryCard key={product.id} {...product} />
         ))}
