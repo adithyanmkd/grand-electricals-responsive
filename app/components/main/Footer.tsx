@@ -28,7 +28,7 @@ const navItems = [
   },
   {
     id: 4,
-    name: "Contact",
+    name: "Contact Us",
     link: "#footer",
     isActive: false,
   },
