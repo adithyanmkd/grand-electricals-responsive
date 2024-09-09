@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+
 import clsx from "clsx";
 
 interface brandType {
@@ -23,6 +24,7 @@ const BrandGrid = ({ iconPath, alt, index, arrayLength }: brandType) => {
   if (arrayLength - 3 < index + 1) {
     bottomBorder = false;
   }
+
   return (
     <div
       className={clsx(
@@ -32,7 +34,7 @@ const BrandGrid = ({ iconPath, alt, index, arrayLength }: brandType) => {
       )}
     >
       <Image
-        className="saturate-0 hover:saturate-100"
+        className="transform hover:-translate-y-16 transition-transform duration-1000"
         src={iconPath}
         height={19}
         width={95}

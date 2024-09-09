@@ -5,47 +5,47 @@ const brandLogo = [
   {
     id: 1,
     iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    alt: "goldmedal logo",
   },
   {
     id: 2,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/gm-logo.svg",
+    alt: "gm logo",
   },
   {
     id: 3,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/crompton-logo.webp",
+    alt: "cromton logo",
   },
   {
     id: 4,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/ace-logo.png",
+    alt: "ace log",
   },
   {
     id: 5,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/havells-logo.svg",
+    alt: "havells logo",
   },
   {
     id: 6,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/legrand-logo.webp",
+    alt: "legrand logo",
   },
   {
     id: 7,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/usha-logo.png",
+    alt: "usha logo",
   },
   {
     id: 8,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/polycab-logo.png",
+    alt: "polycab logo",
   },
   {
     id: 9,
-    iconPath: "/icons/brand-logos/goldmedal-logo.svg",
-    alt: "goldmedal log",
+    iconPath: "/icons/brand-logos/starlight-logo.jpg",
+    alt: "starlight log",
   },
 ];
 
@@ -57,7 +57,6 @@ const OurBrandSection = () => {
       </h1>
       <div className="grid grid-cols-3 pb-[50px] max-w-[320px] mx-auto">
         {brandLogo.map((brand, index, array) => {
-          console.log(array.length);
           return (
             <BrandGrid
               key={brand.id}
