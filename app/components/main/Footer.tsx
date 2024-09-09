@@ -7,6 +7,33 @@ import {
   FooterTitle,
 } from "flowbite-react";
 
+const navItems = [
+  {
+    id: 1,
+    name: "Home",
+    link: "#",
+    isActive: false,
+  },
+  {
+    id: 2,
+    name: "Products",
+    link: "#product-section",
+    isActive: false,
+  },
+  {
+    id: 3,
+    name: "Our Brands",
+    link: "#brand-section",
+    isActive: false,
+  },
+  {
+    id: 4,
+    name: "Contact",
+    link: "#footer",
+    isActive: false,
+  },
+];
+
 const Footer = () => {
   return (
     <FlobiteFooter id="footer" container className="bg-[#45496A] rounded-none">
@@ -32,10 +59,16 @@ const Footer = () => {
             <div>
               <FooterTitle title="Pages" className="text-white" />
               <FooterLinkGroup col>
-                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
-                  Home
-                </FooterLink>
-                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
+                {navItems.map((value) => (
+                  <FooterLink
+                    key={value.id}
+                    href={value.link}
+                    className="text-sm text-[#D4D4D4]"
+                  >
+                    {value.name}
+                  </FooterLink>
+                ))}
+                {/* <FooterLink href="#" className="text-sm text-[#D4D4D4]">
                   Product & Services
                 </FooterLink>
                 <FooterLink href="#" className="text-sm text-[#D4D4D4]">
@@ -43,7 +76,7 @@ const Footer = () => {
                 </FooterLink>
                 <FooterLink href="#" className="text-sm text-[#D4D4D4]">
                   Contact Us
-                </FooterLink>
+                </FooterLink> */}
               </FooterLinkGroup>
             </div>
             <div>
