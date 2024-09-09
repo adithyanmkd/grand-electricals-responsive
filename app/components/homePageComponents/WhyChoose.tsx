@@ -37,7 +37,7 @@ const cardValues = [
 const WhyChoose = () => {
   return (
     <div className="mt-[21px] py-[35px] bg-[#F3F3F3]">
-      <h1 className="pb-[45px] text-center font-bold text-[26px]">
+      <h1 className="pb-[45px] text-center font-bold text-[26px] md:text-[32px]">
         Why Choose Us
       </h1>
       <div className="space-y-[43px]">
