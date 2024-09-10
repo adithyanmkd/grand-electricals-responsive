@@ -6,6 +6,7 @@ import {
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
+import Link from "next/link";
 
 const navItems = [
   {
@@ -79,7 +80,7 @@ const Footer = () => {
                 </FooterLink> */}
               </FooterLinkGroup>
             </div>
-            <div>
+            {/* <div>
               <FooterTitle title="Legal" className="text-white" />
               <FooterLinkGroup col>
                 <FooterLink href="#" className="text-sm text-[#D4D4D4]">
@@ -89,7 +90,7 @@ const Footer = () => {
                   Terms &amp; Conditions
                 </FooterLink>
               </FooterLinkGroup>
-            </div>
+            </div> */}
           </div>
         </div>
         <FooterDivider />
@@ -102,9 +103,19 @@ const Footer = () => {
             <FooterIcon href="#" icon={BsTwitter} />
           </div>
         </div> */}
-        <p className="text-xs mt-2 text-[#D4D4D4] text-center">
+        {/* <p className="text-xs mt-2 text-[#D4D4D4] text-center">
           Powered by mobiz technologies
-        </p>
+        </p> */}
+        <div className="w-full flex justify-center">
+          <div>
+            <Link
+              href="https://www.mobiztechnologies.com/"
+              className="text-xs text-[#D4D4D4] text-center"
+            >
+              Powered by Mobiz Technologies
+            </Link>
+          </div>
+        </div>
       </div>
     </FlobiteFooter>
   );
