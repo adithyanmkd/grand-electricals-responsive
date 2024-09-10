@@ -86,6 +86,7 @@ const Footer = () => {
                   <FooterLink
                     key={value.id}
                     href={value.link}
+                    as={Link}
                     className="text-sm text-[#D4D4D4]"
                   >
                     {value.name}
