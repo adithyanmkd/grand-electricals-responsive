@@ -6,31 +6,33 @@ import {
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
+
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "/",
     isActive: false,
   },
   {
     id: 2,
     name: "Products",
-    link: "#product-section",
+    link: "/#product-section",
     isActive: false,
   },
   {
     id: 3,
     name: "Our Brands",
-    link: "#brand-section",
+    link: "/#brand-section",
     isActive: false,
   },
   {
     id: 4,
     name: "Contact Us",
-    link: "#footer",
+    link: "/contact",
     isActive: false,
   },
 ];
@@ -55,6 +57,26 @@ const Footer = () => {
                   678596
                 </p>
                 <p className="text-sm text-[#D4D4D4]">+91 9447623638</p>
+                {/* social media links */}
+                <FooterTitle title="Follow Us" className="text-white" />
+                <div className="mt-4 flex space-x-6">
+                  <Link href={"/"}>
+                    <Image
+                      src={"/icons/facebook.svg"}
+                      width={20}
+                      height={15}
+                      alt="facebook icon"
+                    ></Image>
+                  </Link>
+                  <Link href={"/"}>
+                    <Image
+                      src={"/icons/whatsapp.svg"}
+                      width={20}
+                      height={15}
+                      alt="facebook icon"
+                    ></Image>
+                  </Link>
+                </div>
               </FooterLinkGroup>
             </div>
             <div>
@@ -69,48 +91,47 @@ const Footer = () => {
                     {value.name}
                   </FooterLink>
                 ))}
-                {/* <FooterLink href="#" className="text-sm text-[#D4D4D4]">
-                  Product & Services
-                </FooterLink>
-                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
-                  About Us
-                </FooterLink>
-                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
-                  Contact Us
-                </FooterLink> */}
               </FooterLinkGroup>
             </div>
-            {/* <div>
-              <FooterTitle title="Legal" className="text-white" />
+            <div>
+              <FooterTitle title="Our Sister Concern" className="text-white" />
               <FooterLinkGroup col>
                 <FooterLink href="#" className="text-sm text-[#D4D4D4]">
-                  Privacy Policy
-                </FooterLink>
-                <FooterLink href="#" className="text-sm text-[#D4D4D4]">
-                  Terms &amp; Conditions
+                  KOKU&apos;S HOME STAY
                 </FooterLink>
               </FooterLinkGroup>
-            </div> */}
+            </div>
           </div>
         </div>
         <FooterDivider />
 
         {/* <div className="w-full sm:flex sm:items-center sm:justify-between mx-auto">
           <FooterCopyright href="#" by="Flowbite™" year={2022} />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <FooterIcon href="#" icon={BsFacebook} />
-            <FooterIcon href="#" icon={BsInstagram} />
-            <FooterIcon href="#" icon={BsTwitter} />
+          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center mx-auto">
+            <Link href={"/"}>
+              <Image
+                src={"/icons/facebook.svg"}
+                width={20}
+                height={15}
+                alt="facebook icon"
+              ></Image>
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/icons/whatsapp.svg"}
+                width={20}
+                height={15}
+                alt="facebook icon"
+              ></Image>
+            </Link>
           </div>
         </div> */}
-        {/* <p className="text-xs mt-2 text-[#D4D4D4] text-center">
-          Powered by mobiz technologies
-        </p> */}
-        <div className="w-full flex justify-center">
+
+        <div className={"w-full flex justify-center"}>
           <div>
             <Link
-              href="https://www.mobiztechnologies.com/"
-              className="text-xs text-[#D4D4D4] text-center"
+              href={"https://www.mobiztechnologies.com/"}
+              className={"text-xs text-[#D4D4D4] text-center"}
             >
               Powered by Mobiz Technologies
             </Link>

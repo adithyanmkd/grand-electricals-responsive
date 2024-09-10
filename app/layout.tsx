@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Grand Electricals",
+  title: "Welcome To Offical Website Of Grand Electrcials Kalladikode",
   description:
     "Find top-quality electrical supplies and services at our electrical shop in Kalladikode, Mannarkkad, Kerala. We offer a wide range of electrical products, wiring accessories, LED lighting, and more.",
   keywords:

@@ -16,25 +16,25 @@ const navItems = [
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "/",
     isActive: false,
   },
   {
     id: 2,
     name: "Products",
-    link: "#product-section",
+    link: "/#product-section",
     isActive: false,
   },
   {
     id: 3,
     name: "Our Brands",
-    link: "#brand-section",
+    link: "/#brand-section",
     isActive: false,
   },
   {
     id: 4,
     name: "Contact Us",
-    link: "#footer",
+    link: "/contact",
     isActive: false,
   },
 ];
