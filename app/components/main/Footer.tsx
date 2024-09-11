@@ -56,11 +56,18 @@ const Footer = () => {
                   Palakkad - Kozhikode Hwy, Kalladikode, Karmiba South, Kerala
                   678596
                 </p>
-                <p className="text-sm text-[#D4D4D4]">+91 9447623638</p>
+                <p className="text-sm text-[#D4D4D4]">grandkkd171@gmail.com</p>
+                <p className="text-sm text-[#D4D4D4]">
+                  +91 9447623638 <span className="block">+91 7025657485</span>
+                </p>
                 {/* social media links */}
                 <FooterTitle title="Follow Us" className="text-white" />
                 <div className="mt-4 flex space-x-6">
-                  <Link href={"/"}>
+                  <Link
+                    href={
+                      "https://www.facebook.com/profile.php?id=61556320111011"
+                    }
+                  >
                     <Image
                       src={"/icons/facebook.svg"}
                       width={20}
@@ -68,12 +75,14 @@ const Footer = () => {
                       alt="facebook icon"
                     ></Image>
                   </Link>
-                  <Link href={"/"}>
+                  <Link
+                    href={"https://chat.whatsapp.com/KoR2cWweqWy2vp8zkMWRM5"}
+                  >
                     <Image
                       src={"/icons/whatsapp.svg"}
                       width={20}
                       height={15}
-                      alt="facebook icon"
+                      alt="Whatsapp icon"
                     ></Image>
                   </Link>
                 </div>

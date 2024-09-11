@@ -45,7 +45,22 @@ const brandLogo = [
   {
     id: 9,
     iconPath: "/icons/brand-logos/starlight-logo.jpg",
-    alt: "starlight log",
+    alt: "starlight logo",
+  },
+  {
+    id: 10,
+    iconPath: "/icons/brand-logos/parryware-icon.png",
+    alt: "parryware logo",
+  },
+  {
+    id: 11,
+    iconPath: "/icons/brand-logos/million-logo.png",
+    alt: "million log",
+  },
+  {
+    id: 12,
+    iconPath: "/icons/brand-logos/vguard-logo.webp",
+    alt: "vguard logo",
   },
 ];
 
