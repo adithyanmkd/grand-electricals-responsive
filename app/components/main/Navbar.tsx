@@ -43,7 +43,7 @@ const Navbar = () => {
   // const [activeState, setActiveState] = useState(false);
 
   return (
-    <div className="z-10">
+    <div className="relative z-10">
       {/* <div className="h-[54px] flex justify-between items-center px-6 py-4 shadow-lg fixed w-full top-0 z-10  bg-white">
         <div>
           <p className="font-semibold text-xl">GE</p>

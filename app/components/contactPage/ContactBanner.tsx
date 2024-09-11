@@ -6,7 +6,7 @@ const ContactBanner = () => {
     <div className="mt-[60px] md:max-w-full md:h-[50%] md:mt-[41px] lg:max-w-full">
       <div className="relative flex justify-center items-center">
         <Image
-          className="w-full h-full hidden md:flex"
+          className="w-full h-full hidden md:flex "
           src={"/images/banner/contact-banner.png"}
           width={500}
           height={375}
