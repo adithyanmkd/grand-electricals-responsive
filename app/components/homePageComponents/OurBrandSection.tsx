@@ -55,7 +55,7 @@ const brandLogo = [
   {
     id: 11,
     iconPath: "/icons/brand-logos/million-logo.png",
-    alt: "million log",
+    alt: "million logo",
   },
   {
     id: 12,
