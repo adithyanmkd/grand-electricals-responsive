@@ -27,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="icons/faviconIcon.svg" type="image/svg+xml" />
+        <link rel="icon" href="icons/faviconIcon.ico" />
       </head>
       <body className={`${poppins.className} bg-[#FAF9F6]`}>
         <Navbar />
