@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="icons/faviconIcon.ico" sizes="16x16" />
         <link rel="icon" href="icons/faviconIcon.ico" sizes="32x32" />
         <link
           rel="icon"
