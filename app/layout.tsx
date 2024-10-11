@@ -25,34 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="icons/faviconIcon.ico" sizes="16x16" />
-        <link rel="icon" href="icons/faviconIcon.ico" sizes="32x32" />
-        <link
-          rel="icon"
-          href="icons/favicon.svg"
-          type="image/svg+xml"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          href="icons/favicon.svg"
-          type="image/svg+xml"
-          sizes="16x16"
-        />
-        <link
-          rel="icon"
-          href="icons/favicon.png"
-          type="image/png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          href="icons/favicon.png"
-          type="image/png"
-          sizes="16x16"
-        />
-      </head>
+      <head></head>
       <body className={`${poppins.className} bg-[#FAF9F6]`}>
         <Navbar />
         <main>{children}</main>
