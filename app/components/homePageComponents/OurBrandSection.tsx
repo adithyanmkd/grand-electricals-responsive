@@ -15,7 +15,7 @@ const brandLogo = [
   {
     id: 3,
     iconPath: "/icons/brand-logos/crompton-logo.webp",
-    alt: "cromton logo",
+    alt: "crompton logo",
   },
   {
     id: 4,
@@ -61,6 +61,36 @@ const brandLogo = [
     id: 12,
     iconPath: "/icons/brand-logos/vguard-logo.webp",
     alt: "vguard logo",
+  },
+  {
+    id: 13,
+    iconPath: "/icons/brand-logos/crabtree-logo.png",
+    alt: "crabtree logo",
+  },
+  {
+    id: 14,
+    iconPath: "/icons/brand-logos/fybros.svg",
+    alt: "fybros logo",
+  },
+  {
+    id: 15,
+    iconPath: "/icons/brand-logos/luker-logo.svg",
+    alt: "luker logo",
+  },
+  {
+    id: 16,
+    iconPath: "/icons/brand-logos/hindware.svg",
+    alt: "hindware logo",
+  },
+  {
+    id: 17,
+    iconPath: "/icons/brand-logos/tita.svg",
+    alt: "tita logo",
+  },
+  {
+    id: 18,
+    iconPath: "/icons/brand-logos/astral-logo.png",
+    alt: "astral logo",
   },
 ];
 
